@@ -1,25 +1,25 @@
 #include "serie.h"
 
 
-void CrearListadoSeries(eSerie array[],int cantidad)
+void CrearListadoSeries(eSerie Series[],int cantidad)
 {
     int i;
     for(i=0;i<cantidad;i++)
     {
-        array[i].idSerie=i;
+        Series[i].idSerie=i;
         if(i%2==0)
         {
-            strcpy(array[i].genero,"Terror");
+            strcpy(Series[i].genero,"Terror");
         }else{
-             strcpy(array[i].genero,"Humor");
+             strcpy(Series[i].genero,"Humor");
         }
 
     }
-     strcpy(array[0].nombre,"Los muertos vivos");
-     strcpy(array[1].nombre,"Los vickingos");
-     strcpy(array[2].nombre,"Los extraterrestres");
-     strcpy(array[3].nombre,"Los Hacker");
-     strcpy(array[4].nombre,"Los perdidos");
+     strcpy(Series[0].nombre,"Los muertos vivos");
+     strcpy(Series[1].nombre,"Los vickingos");
+     strcpy(Series[2].nombre,"Los extraterrestres");
+     strcpy(Series[3].nombre,"Los Hacker");
+     strcpy(Series[4].nombre,"Los perdidos");
 
 }
 
@@ -32,7 +32,7 @@ void mostrarSeries(eSerie Series[], int cantidad)
         {
             if(Series[i].idSerie!=0)
             {
-                printf("%s",Series[i].nombre);
+                printf("%s\n",Series[i].nombre);
 
             }
         }

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1524495440 source:c:\test\matias\estructurasyrelacionesenc\gerflix2.0\serie.c
+1524571749 source:c:\test\matias\estructurasyrelacionesenc\gerflix2.0\serie.c
 	"serie.h"
 
 1524486383 source:c:\test\matias\estructurasyrelacionesenc\gerflix2.0\usuario.c
@@ -7,12 +7,12 @@
 1524494082 source:c:\test\matias\estructurasyrelacionesenc\gerflix2.0\usuarioserie.c
 	"usuarioSerie.h"
 
-1524494627 source:c:\test\matias\estructurasyrelacionesenc\gerflix2.0\main.c
+1524571721 source:c:\test\matias\estructurasyrelacionesenc\gerflix2.0\main.c
 	<stdio.h>
 	<stdlib.h>
 	"serie.h"
 
-1524494257 c:\test\matias\estructurasyrelacionesenc\gerflix2.0\serie.h
+1524571589 c:\test\matias\estructurasyrelacionesenc\gerflix2.0\serie.h
 
 1524490160 c:\test\matias\estructurasyrelacionesenc\gerflix2.0\usuarioserie.h
 

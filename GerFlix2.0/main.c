@@ -4,7 +4,7 @@
 
 #define TAM 5
 
-eSerie Series[TAM];
+
 /**
 *
     1. los datos de la serie que ve cada usuario
@@ -14,11 +14,12 @@ eSerie Series[TAM];
 */
 int main()
 {
-
+eSerie Series[TAM];
 
 
 
     printf("\t\t\t\tMatias Carizu\n");
-    mostrarSeries(Series,5);
+    CrearListadoSeries(Series, TAM);
+    mostrarSeries(Series,TAM);
     return 0;
 }
