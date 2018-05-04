@@ -1,6 +1,41 @@
-#include "serie.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include<string.h>
+#include<conio.h>
+
+#include"serie.h"
 
 
+int buscarSerieVacio(eSerie Series[], int cantidad)
+{
+
+    int i;
+    for(i=0;i < cantidad; i++)
+    {
+        if(Series[i].status== 0)
+        {
+            return i;
+        }
+    }
+    return -1;
+
+}
+void cargarSerieId(eSerie Series[],int cantidad)
+{
+
+}
+int buscarSerieId(eSerie Serie[],int cantidad,int id)
+{
+    int i;
+    for(i=0;i<cantidad;i++)
+    {
+        if(Serie[i].idSerie[i]=id && Serie[i].status==1)
+        {
+            return i;
+        }
+    }return -1;
+
+}
 void CrearListadoSeries(eSerie Series[],int cantidad)
 {
     int i;
@@ -15,11 +50,11 @@ void CrearListadoSeries(eSerie Series[],int cantidad)
         }
 
     }
-     strcpy(Series[0].nombre,"Los muertos vivos");
-     strcpy(Series[1].nombre,"Los vickingos");
-     strcpy(Series[2].nombre,"Los extraterrestres");
-     strcpy(Series[3].nombre,"Los Hacker");
-     strcpy(Series[4].nombre,"Los perdidos");
+     strcpy(Series[0].nombre,"\nLos muertos vivos");
+     strcpy(Series[1].nombre,"\nLos vickingos");
+     strcpy(Series[2].nombre,"\nLos extraterrestres");
+     strcpy(Series[3].nombre,"\nLos Hacker");
+     strcpy(Series[4].nombre,"\nLos perdidos");
 
 }
 
@@ -32,10 +67,23 @@ void mostrarSeries(eSerie Series[], int cantidad)
         {
             if(Series[i].idSerie!=0)
             {
-                printf("%s\n",Series[i].nombre);
+                printf("%s --- %s \n",Series[i].nombre,Series[i].genero);
 
             }
         }
 }
+void setStatusSerie(eSerie Series[], int tamanio ,int valor){
+
+    int i;
+    //CrearListadoSeries(Series, tamanio);
+    for(i=0;i<tamanio;i++)
+    {
+        // printf("%s ",Series[i].nombre);
+         Series[i].status=valor;
+         //printf(" --- %d \n",Series[i].status);
+    }
+
+}
+
 
 
